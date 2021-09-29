@@ -47,7 +47,7 @@ class GetEntry extends StatelessWidget {
                         child: ElevatedButton(
                             onPressed: () {
                               Future entry = getEntry(_controller1.text);
-                              // print(entry.toString());
+                              print(entry.toString());
                               Navigator.pop(context);
                             },
                             child: const Text('Get')),
@@ -64,10 +64,15 @@ class GetEntry extends StatelessWidget {
   }
 }
 
-Future<http.Response> getEntry(String id)async {
+Future<http.Response> getEntry(String id) async {
+  return await http.get(Uri.parse('http://localhost:8080/entries/' + id));
+}
 
-  //TODO most probably CORS error
-  return await http.get(Uri.parse('http://localhost:8080/entries'), headers: {
-    "Access-Control-Allow-Origin": "*"
-  });
+Map<String, dynamic> toJson(Future<http.Response> future){
+  return {
+    
+
+  };
+
+  return future.toString();
 }
