@@ -6,16 +6,15 @@ import 'Entry/put.dart';
 import 'package:http/http.dart' as http;
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const MyHomePage(),
+      home: MyHomePage(),
       routes: {
         'get': (context) => GetEntry(),
         'create': (context) => CreateEntry(),
@@ -27,9 +26,8 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-  const MyHomePage({Key? key}) : super(key: key);
 
-  final TextEditingController textEditingController = useTextEditingController().fromVa;
+  final TextEditingController textEditingController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -48,46 +46,46 @@ class MyHomePage extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 Padding(
-                    padding: const EdgeInsets.all(10),
+                    padding: EdgeInsets.all(10),
                     child: ElevatedButton(
                         onPressed: () {
                           Future entries = getAllEntries();
                           print(entries);
                         },
-                        child: const Text('Get all'))),
+                        child: Text('Get all'))),
                 Padding(
-                  padding: const EdgeInsets.all(10),
+                  padding: EdgeInsets.all(10),
                   child: ElevatedButton(
                       onPressed: () {
                         Navigator.pushNamed(context, 'get');
                       },
-                      child: const Text('Get')),
+                      child: Text('Get')),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(10),
+                  padding: EdgeInsets.all(10),
                   child: ElevatedButton(
                       onPressed: () {
                         Navigator.pushNamed(context, 'delete');
                       },
-                      child: const Text('Delete')),
+                      child: Text('Delete')),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(10),
+                  padding: EdgeInsets.all(10),
                   child: ElevatedButton(
                       onPressed: () {
                         Navigator.pushNamed(context, 'create');
                       },
-                      child: const Text('Create')),
+                      child: Text('Create')),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(10),
+                  padding: EdgeInsets.all(10),
                   child: ElevatedButton(
                       onPressed: () {
                         Navigator.pushNamed(context, 'put');
                       },
-                      child: const Text('Put')),
+                      child: Text('Put')),
                 ),
-                const Padding(
+                Padding(
                   padding: EdgeInsets.all(10),
                   child: TextField(
                     controller: textEditingController,
