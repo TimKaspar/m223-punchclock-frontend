@@ -31,73 +31,75 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Stack(
+    return Scaffold(
+      body: Stack(
         alignment: AlignmentDirectional.topCenter,
         children: <Widget>[
           const Padding(
-            padding: EdgeInsets.only(top: 200),
+            padding: EdgeInsets.only(top: 50),
             child: Text(
               'Entry',
               style: TextStyle(fontSize: 40),
             ),
           ),
-          Center(
-            child: Column(
-              children: <Widget>[
-                Padding(
+            Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Padding(
+                      padding: EdgeInsets.all(10),
+                      child: ElevatedButton(
+                          onPressed: () {
+                            Future entries = getAllEntries();
+                            print(entries);
+                          },
+                          child: Text('Get all'))),
+                  Padding(
                     padding: EdgeInsets.all(10),
                     child: ElevatedButton(
                         onPressed: () {
-                          Future entries = getAllEntries();
-                          print(entries);
+                          Navigator.pushNamed(context, 'get');
                         },
-                        child: Text('Get all'))),
-                Padding(
-                  padding: EdgeInsets.all(10),
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.pushNamed(context, 'get');
-                      },
-                      child: Text('Get')),
-                ),
-                Padding(
-                  padding: EdgeInsets.all(10),
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.pushNamed(context, 'delete');
-                      },
-                      child: Text('Delete')),
-                ),
-                Padding(
-                  padding: EdgeInsets.all(10),
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.pushNamed(context, 'create');
-                      },
-                      child: Text('Create')),
-                ),
-                Padding(
-                  padding: EdgeInsets.all(10),
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.pushNamed(context, 'put');
-                      },
-                      child: Text('Put')),
-                ),
-                Padding(
-                  padding: EdgeInsets.all(10),
-                  child: TextField(
-                    controller: textEditingController,
-                    maxLines: null,
-                    minLines: 6,
-                    keyboardType: TextInputType.multiline,
-                    enabled: false,
+                        child: Text('Get')),
                   ),
-                ),
-              ],
+                  Padding(
+                    padding: EdgeInsets.all(10),
+                    child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, 'delete');
+                        },
+                        child: Text('Delete')),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(10),
+                    child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, 'create');
+                        },
+                        child: Text('Create')),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(10),
+                    child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, 'put');
+                        },
+                        child: Text('Put')),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(10),
+                    child: TextField(
+                      controller: textEditingController,
+                      maxLines: null,
+                      minLines: 6,
+                      keyboardType: TextInputType.multiline,
+                      enabled: false,
+                    ),
+                  ),
+                ],
+              ),
             ),
-          ),
         ],
       ),
     );

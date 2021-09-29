@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ch.ti8m.kti.m223_ui">
+    package="ch.ti8m.kti.m223-punchclock-frontend">
    <application
-        android:label="m223_ui"
+        android:label="m223-punchclock-frontend"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
