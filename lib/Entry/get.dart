@@ -67,12 +67,3 @@ class GetEntry extends StatelessWidget {
 Future<http.Response> getEntry(String id) async {
   return await http.get(Uri.parse('http://localhost:8080/entries/' + id));
 }
-
-Map<String, dynamic> toJson(Future<http.Response> future){
-  return {
-    
-
-  };
-
-  return future.toString();
-}
