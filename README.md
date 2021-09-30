@@ -33,10 +33,6 @@ Follow this guide to setup your Flutter app for web: [Flutter-Build a web applic
 | `flutter run` | to run a flutter project in web run the flutter app like normal and select a browser as a device to launch the app on |
 
 ## Run Project
-**In the settings.gradle file change the `flutterSdkPath` variable to the path to your local instance of your Flutter SDK**<br/>
-
-If you are having problems locating your local Flutter installation run `where flutter`.<br/>
-
 **To run the project:**
 
 1. `flutter run`
