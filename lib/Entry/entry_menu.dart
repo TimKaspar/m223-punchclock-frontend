@@ -65,6 +65,7 @@ class EntryMenu extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.all(10),
                   child: TextField(
+                    decoration: const InputDecoration(labelText: 'Output'),
                     controller: textEditingController,
                     maxLines: null,
                     minLines: 6,
