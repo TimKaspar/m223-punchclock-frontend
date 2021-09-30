@@ -1,6 +1,7 @@
 # Backend
 
-##
+##Purpose
+The backend serves as a interface between the frontend and the database server and provides the functionality for adding/deleting/updating/reading data from the server
 
 ## Installation
 Follow these steps to start the application
