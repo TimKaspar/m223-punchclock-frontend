@@ -27,7 +27,9 @@ class UserManagment extends StatelessWidget {
                 children: <Widget>[
                   IconButton(
                     icon: Icon(Icons.edit),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'editUser');
+                    },
                   ),
                   IconButton(
                     icon: Icon(Icons.delete),
