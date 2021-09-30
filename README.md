@@ -15,7 +15,7 @@ Follow these steps to start the application
 ./mvnw compile quarkus:dev
 ```
 <br/>
-_If the command mentioned above does not work try to rn the command without the "./"_
+**_If the command mentioned above does not work try to rn the command without the "./"_**
 
 Useful services:
 
