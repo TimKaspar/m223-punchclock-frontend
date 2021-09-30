@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
         'delete': (context) => DeleteEntry(),
         'put': (context) => PutEntry(),
         'entryMenu' : (context) => EntryMenu(),
+        'loginMenu' : (context) => LoginMenu(),
         'login' : (context) => Login(),
         'register' : (context) => Register(),
         'userManagment' : (context) => UserManagment(),
