@@ -32,6 +32,50 @@ Password: zli
 <br/>
 <br/>
 
+## JPQL
+The JPQL query with `HAVING` is located in _ExpenseService.getExpensesOver50()_ and is designed to return all Expenses with an amount that is greater than 50.
+
+## Script for example data
+At start a script is run which inserts example data into the database <br/>
+The data is as follows:
+
+<br/>
+
+### category:
+| id | title |
+| 1 | 'Admin' |
+| 2 | 'Projekte' |
+| 3 | 'IT-Support' |
+
+<br/>
+
+### entry:
+| id | checkIn | checkOut | category_id |
+| 1 | '2021-09-30T07:16:14.807Z' | '2021-10-30T07:16:14.807Z' | 1 |
+| 2 | '2011-08-12T20:17:46.384Z' | '2011-09-11T20:17:46.384Z' | 2 |
+| 3 | '1989-03-30T07:16:14.807Z' | '1989-04-30T07:16:14.807Z' | 3 |
+| 4 | '2031-03-17T20:17:46.384Z' | '2001-02-13T20:17:46.384Z' | 2 |
+
+<br/>
+
+### absence:
+| id | end | start |
+| 1 | '2021-09-30T07:16:14.807Z' | '2021-10-30T07:16:14.807Z' |
+| 2 | '2011-08-12T20:17:46.384Z' | '2011-09-11T20:17:46.384Z' |
+| 3 | '1989-03-30T07:16:14.807Z' | '1989-04-30T07:16:14.807Z' |
+| 4 | '2031-03-17T20:17:46.384Z' | '2001-02-13T20:17:46.384Z' |
+
+<br/>
+
+### expense:
+| id | amount | receipt |
+| 1 | 67.50 | 'Vapiano-SihlCity' |
+| 2 | 69.25 | 'ArenaCinemas-SihlCity' |
+| 3 | 23.00 | 'BurgerKing-HauptBanhofZürich' |
+| 4 | 11.50 | 'Coop-SihlCity' |
+| 5 | 356.90 | 'GameStop-SihlCity'  |
+
+
 # Frontend (Flutter)
 ## Purpose
 The Flutter frontend serves as a interface for the backend and as a way to create/edit/view/delete the entities of the database.
