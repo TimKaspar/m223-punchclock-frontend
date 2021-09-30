@@ -1,12 +1,13 @@
+import 'package:date_time_picker/date_time_picker.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:date_time_picker/date_time_picker.dart';
 
 class CreateEntry extends StatelessWidget {
   late final TextEditingController _controller1 =
       TextEditingController(text: DateTime.now().toString());
   late final TextEditingController _controller2 =
       TextEditingController(text: DateTime.now().toString());
+  late final TextEditingController _controller3 = TextEditingController();
 
   var _checkIn;
   var _checkOut;
@@ -59,6 +60,10 @@ class CreateEntry extends StatelessWidget {
                       return null;
                     },
                     onSaved: (val) => _checkOut = val,
+                  ),
+                  TextFormField(
+                    controller: _controller3,
+                    decoration: const InputDecoration(labelText: 'category ID'),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
