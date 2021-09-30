@@ -6,7 +6,7 @@ if not already on Stable, switch to Flutter Channel Stable<br/>
     `flutter channel stable`
 <br/>
 
-Download FLutter **_2.2.3_** from the official Flutter releases page: [Flutter releases 2.2.3](https://flutter.dev/docs/development/tools/sdk/releases)<br/>
+Download FLutter **_2.5.1_** from the official Flutter releases page: [Flutter releases 2.5.1](https://flutter.dev/docs/development/tools/sdk/releases)<br/>
 
 **Some useful commands:**
 | command | description |
