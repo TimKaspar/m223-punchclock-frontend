@@ -1,3 +1,28 @@
+# Backend
+
+Follow these steps to start the application
+1. Install OpenJDK 11 or higher and have the JAVA_HOME variable set 
+2. Install Apache Maven 3.8.1 or higher
+3. Navigate to the root Directory of the Project
+`cd m223-helloworld-quarkus/`
+4. Start the Application with 
+```shell script
+./mvnw compile quarkus:dev
+```
+
+Useful services:
+
+Swagger API: http://localhost:8080/q/swagger-ui/
+
+H2 Console: http://localhost:8080/h2/ 
+JDBC URL: jdbc:h2:mem:punchclock
+User Name: zli
+Password: zli
+
+<br/>
+<br/>
+<br/>
+
 # Frontend (Flutter)
 ## Install Flutter
 Follow this guide to install Flutter: 
