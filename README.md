@@ -1,14 +1,21 @@
 # Backend
 
+##
+
+## Installation
 Follow these steps to start the application
 1. Install OpenJDK 11 or higher and have the JAVA_HOME variable set 
 2. Install Apache Maven 3.8.1 or higher
-3. Navigate to the root Directory of the Project
+
+## Run the backend application
+1. Navigate to the root Directory of the Project
 `cd m223-helloworld-quarkus/`
-4. Start the Application with 
+2. Start the Application with 
 ```shell script
 ./mvnw compile quarkus:dev
 ```
+<br/>
+_If the command mentioned above does not work try to rn the command without the "./"_
 
 Useful services:
 
@@ -24,6 +31,10 @@ Password: zli
 <br/>
 
 # Frontend (Flutter)
+## Purpose
+The Flutter frontend serves as a interface for the backend and as a way to create/edit/view/delete the entities of the database.
+The Flutter Application has only been tested on web but since the Flutter framework also works on IOS, Android and Windows the adjustments needed to get it working on additional operating systemns should not be too big.
+
 ## Install Flutter
 Follow this guide to install Flutter: 
 [Flutter-Install](https://flutter.dev/docs/get-started/install)<br/>
