@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-class MyHomePage extends StatelessWidget {
+class EntryMenu extends StatelessWidget {
   final TextEditingController textEditingController = TextEditingController();
 
   @override
