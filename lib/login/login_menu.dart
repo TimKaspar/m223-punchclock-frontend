@@ -31,7 +31,9 @@ class LoginMenu extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.edit),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, 'userManagment');
+        },
       ),
     );
   }
