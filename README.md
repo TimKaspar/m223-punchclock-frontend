@@ -14,9 +14,9 @@ Useful services:
 
 Swagger API: http://localhost:8080/q/swagger-ui/
 
-H2 Console: http://localhost:8080/h2/ 
-JDBC URL: jdbc:h2:mem:punchclock
-User Name: zli
+H2 Console: http://localhost:8080/h2/ <br/>
+JDBC URL: jdbc:h2:mem:punchclock <br/>
+User Name: zli <br/>
 Password: zli
 
 <br/>
