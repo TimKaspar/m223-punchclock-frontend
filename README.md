@@ -41,7 +41,9 @@ Follow this guide to install Flutter:
 [Flutter-Install](https://flutter.dev/docs/get-started/install)<br/>
 
 if not already on Stable, switch to Flutter Channel Stable<br/>
-    `flutter channel stable`
+```shell script
+    flutter channel stable
+```
 <br/>
 
 Download FLutter **_2.5.1_** from the official Flutter releases page: [Flutter releases 2.5.1](https://flutter.dev/docs/development/tools/sdk/releases)<br/>
@@ -73,5 +75,8 @@ Follow this guide to setup your Flutter app for web: [Flutter-Build a web applic
 ## Run Project
 **To run the project:**
 
-1. `flutter run`
+1. 
+```shell script
+    flutter run
+```
 2. proceed select the wanted device and the application will start
