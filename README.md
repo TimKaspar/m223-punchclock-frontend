@@ -19,7 +19,8 @@ Download FLutter **_2.5.1_** from the official Flutter releases page: [Flutter r
 | `where flutter dart` | displays the path to the local instance of flutter & dart (omit "dart" to only display th flutter path) |
 
 ## Build Flutter application in Web
-If you already have chrome installed you should be able to Start Flutter in Web without any additional steps, so the steps below are some general Information.
+**If you already have chrome installed you should be able to Start Flutter in Web without any additional steps, so the steps below are some general Information.**
+<br/>
 <br/>
 Follow this guide to setup your Flutter app for web: [Flutter-Build a web application](https://flutter.dev/docs/get-started/web)
 
