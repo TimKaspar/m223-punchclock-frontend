@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:m223_ui/Entry/entry_menu.dart';
 import 'package:m223_ui/login/login.dart';
 import 'package:m223_ui/login/register.dart';
+import 'package:m223_ui/userManagment/edit_user.dart';
 import 'package:m223_ui/userManagment/user_managment.dart';
 
 import 'Entry/create.dart';
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         'login' : (context) => Login(),
         'register' : (context) => Register(),
         'userManagment' : (context) => UserManagment(),
+        'editUser' : (context) => EditUser(),
       },
     );
   }
