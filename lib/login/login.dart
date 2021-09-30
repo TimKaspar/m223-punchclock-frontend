@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class CreateEntry extends StatelessWidget {
+class Login extends StatelessWidget {
   late final TextEditingController _controller1 = TextEditingController();
   late final TextEditingController _controller2 = TextEditingController();
 
