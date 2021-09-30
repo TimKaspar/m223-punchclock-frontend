@@ -29,6 +29,10 @@ class LoginMenu extends StatelessWidget {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.edit),
+        onPressed: () {},
+      ),
     );
   }
 }
