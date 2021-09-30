@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:m223_ui/Entry/entry_menu.dart';
 
 import 'Entry/create.dart';
 import 'Entry/delete.dart';
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
         'create': (context) => CreateEntry(),
         'delete': (context) => DeleteEntry(),
         'put': (context) => PutEntry(),
+        'entryMenu' : (context) => EntryMenu(),
       },
     );
   }
