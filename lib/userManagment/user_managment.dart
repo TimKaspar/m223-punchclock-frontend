@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 class UserManagment extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      child: ListView.builder(
+    return Scaffold(
+      body: ListView.builder(
         scrollDirection: Axis.vertical,
         itemCount: 20,
         shrinkWrap: true,
@@ -40,6 +40,10 @@ class UserManagment extends StatelessWidget {
             ),
           );
         },
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.exit_to_app),
+        onPressed: () {Navigator.pushNamed(context, 'loginMenu');},
       ),
     );
   }
