@@ -15,14 +15,14 @@ class LoginMenu extends StatelessWidget {
                 padding: EdgeInsets.all(10),
                 child: ElevatedButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, '');
+                      Navigator.pushNamed(context, 'login');
                     },
                     child: Text('Login'))),
             Padding(
               padding: EdgeInsets.all(10),
               child: ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '');
+                    Navigator.pushNamed(context, 'register');
                   },
                   child: Text('Register')),
             ),
